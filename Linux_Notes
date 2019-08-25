@@ -1,0 +1,78 @@
+/bin -> usr/bin
+/boot -> boot loader programme for starting a linux machine
+/dev   ---> this for device information like divice manager in windows
+/etc    ->  all the system files and third party configuration files are present here.
+/home  --> home directories for all users in linux
+/initrd.img -> boot/initrd.img-4.18.0-kali2-amd64
+/initrd.img.old -> boot/initrd.img-4.18.0-kali2-amd64
+/lib -> usr/lib  --> this are librarys required for linux command fuctions
+/lib32 -> usr/lib32 --> 
+/lib64 -> usr/lib64
+/libx32 -> usr/libx32
+/lost+found
+/media --> this is likea initial mount point  media related devices
+/mnt --> mount point directory 
+/opt --> optional file system , default d drive 
+/proc --> all the info relating to processors is stored here, \/proc/cpuinfo , /proc/meminfo 
+/root --> is home dir for root user
+/run
+/sbin -> usr/sbin thirp party files stored here 
+/srv
+/sys
+/tmp --> is file system read write access for all users in linux 
+/usr --> user file system 
+/var --> file system for storing sytem logs and system data
+/vmlinuz -> boot/vmlinuz-4.18.0-kali2-amd64
+/vmlinuz.old -> boot/vmlinuz-4.18.0-kali2-amd64
+
+----------------------
+
+Debian - Debian/ubuntu/Kali/Raspberry   -->apt is app store. 
+rhel(enterprise)/centos/oel(ent)  --> yum 
+fedora  --> dnf 
+
+
+epel repo --> this is a geneirc repo for rhel/centos/oel 
+
+Every APp store is a configurataion file. --> /etc 
+
+you can create a local yum. 
+
+**Debian COmmands 
+apt upgrade or apt-get upgrade 
+apt full-upgrade or apt-get dist-upgrade
+apt install <pkg-name> 
+apt -y install <pkg-name>
+apt remove <pkg-name>
+apt-cache search <pkg-name> - give the pkg and description
+apt-cache showpkg <pkg-name> - list dependencies 
+apt-cache show <pkg-name> - show pkg info. 
+apt-get clean (clean the .deb files downloaded)
+apt-get download <pkg-name> - download witout install
+
+
+**RHEL 
+
+yum install <pkg-name>
+yum -y install <pkg-name>
+yum -y groupinstall <group-name>
+yum search <pkg-name>
+yum -v repolist 
+yum remove <pkg-name>
+yum reinstall <pkg-name>
+yum info <pkg-name>
+yum clean all  --> Clean Yum Cache
+yum -y localinstall * --> install rpm files as yum. 
+
+
+Note:- 
+1. Every COnnection has a Port Number 
+    <1024 --> owned by root , [sudo , stickybit has to be used if it has to start with anathor user.]
+    >1024 - 9999 --> statuc Ports 
+    9999 - 65535 --> dynamic ports. 
+
+  important protocols and port numbers in linux. --> https://hostingreviewbox.com/rhel-tcp-and-udp-ports/
+
+  ssh / ftp 
+
+  
